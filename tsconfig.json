@@ -1,4 +1,3 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "compileOnSave": false,
   "compilerOptions": {
@@ -15,6 +14,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@company-platform/dynamic-router": [
+        "projects/dynamic-router/src/public-api.ts",
+      ],
+      "@company-platform/micro-app-a": [
+        "projects/micro-app-a/src/public-api.ts",
+      ]
+    }
   }
 }

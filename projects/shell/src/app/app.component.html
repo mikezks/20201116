@@ -1,0 +1,19 @@
+<ul>
+  <li>
+    <a href="">Reload</a>
+  </li>
+  <li *ngFor="let nav of navigation">
+    <a [routerLink]="nav.link">{{ nav.label }}</a>
+  </li>
+</ul>
+
+<div>
+  <button (click)="reverseOutlets()">reverse outlets</button>
+  {{ outlets | json }}
+</div>
+
+<div *ngFor="let outlet of outlets" class="mf">
+  <dyn-router-outlet [name]="outlet"></dyn-router-outlet>
+</div>
+
+

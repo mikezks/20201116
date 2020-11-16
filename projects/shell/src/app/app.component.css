@@ -1,0 +1,13 @@
+
+:host {
+  border: 5px dashed blue;
+  display: block;
+  padding: 20px;
+}
+
+.mf {
+  border: 5px dashed green;
+  display: block;
+  margin-top: 20px;
+  padding: 20px;
+}
